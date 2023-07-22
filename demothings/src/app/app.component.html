@@ -1,0 +1,79 @@
+<!-- <h1>Getting Started with Angular</h1>
+<h2>{{title}}</h2>
+<h3>My Data is:{{a}}</h3>
+<h2>{{getValue()}}</h2>
+<h1>{{getReturns()}}</h1>
+<h2>{{24*9}}</h2>
+<app-home></app-home>
+<app-shop></app-shop>
+<app-c1></app-c1>
+<app-c2></app-c2>
+<app-c3></app-c3>
+<app-login></app-login>
+<button (click)="getOutput()">ClickMe</button>
+<button (click)="getOutputs('hey guys')">ClickMe</button>
+<button (click)="getFunny()">Click here</button>
+<h1 *ngIf="show else elseblock">
+    Hey It should work.
+    its jayesh
+</h1>
+<ng-template #elseblock>
+<h1>else block executed</h1>
+</ng-template>
+<h2 *ngIf="show then anotherIfBlock">
+    This is another if Block
+</h2>
+<ng-template #anotherIfBlock>
+    <h2>
+        Yeah its another if block getting executed.
+    </h2>
+</ng-template>
+<!-- <div [ngSwitch]="color">
+    <h1 *ngSwitchCase="'parrot'"style="color:blue;">Green color</h1>
+    
+</div>
+<div [ngSwitch]="horse">
+    <h2 *ngSwitchCase="'peak'"style="color:Green;">Black Horse</h2>
+</div> -->
+<!-- <div [ngSwitch]="example">
+    <h1 *ngSwitchCase="'instance'"style="color:brown;">Text in violet</h1>
+    <h2 *ngSwitchCase="'instance2'" style='color: aqua;'>Text in Aqua Color</h2>
+    <h3 *ngSwitchCase="'instance3'" style='color:chartreuse;'>Text in chartreuse color</h3>
+    <h1 *ngSwitchCase="'instance4'" style='color:crimson; font-style: italic;'>Text in Italic Style</h1>
+    <h3 *ngSwitchDefault>Wrong Case</h3>
+</div> -->
+<!-- <h3 *ngFor="let i of users">Name is:{{i}}</h3> -->
+<!-- <h3 *ngFor="let i of usersinfo">{{i.Name}}---{{i.EmailId}}---{{i.Phone}}</h3>
+<ul *ngFor="let i of u1">
+<li>Name is:{{i.EmployeeName}}</li>
+<li>UserId is:{{i.UserId}}</li>
+<ul *ngFor="let a of i.languages">
+    <li>Languages are:{{a}}</li>
+</ul>
+</ul>
+<h1 [style.color]=" ' Blue'">{{title}}</h1>
+<h1 [style.color]=" color ">{{title}}</h1>
+<h2 [style.color]="color" [style.backgroundColor]="bgColor">{{title}}</h2>
+<button (click)="changecolor()">change color</button> --> 
+<app-header></app-header>
+<form #basicForm="ngForm" (ngSubmit) ="getData(basicForm.value)">
+  <input type="text" ngModel name="User" placeholder="Enter User Name">
+  <br>
+  <br>
+  <input type="text"  ngModel name="EmailId"  placeholder="Enter your EmailId">
+  <br>
+  <br>
+  <input type="text"  ngModel name="password" placeholder="Enter your password">
+  <br>
+  <br>
+    <button>Register</button>
+    <ul>
+        <li>{{userData.User}}</li>
+        <li>{{userData.EmailId}}</li>
+        <li>{{userData.password}}</li>
+    </ul>
+</form>
+<button (click)="toggle()">toggle</button>
+<h1 *ngIf="display">
+    This is my Heading
+</h1>
